@@ -10,6 +10,7 @@ requests = "*"
 dash = "*"
 numpy = "*"
 pandas = "*"
+pulp = "*"
 
 [requires]
 python_version = "3.6"

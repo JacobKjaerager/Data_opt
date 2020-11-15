@@ -15,8 +15,8 @@ Visualization is through the Pythonbased webclient Dash which wires frontend vie
 
 import Path
 import dash
-from layout import layout
-from callbacks import init_callback
+from web_view.layout import layout
+from web_view.callbacks import init_callback
 
 
 if __name__ == '__main__':
@@ -28,6 +28,5 @@ if __name__ == '__main__':
 
     app = layout(app)
     init_callback(app)
-    print("{}/styling".format(Path(__file__).parent))
-
+    
     app.run_server(debug=True)
